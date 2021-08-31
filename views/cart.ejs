@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.3-web/css/all.css">
+</head>
+<body>
+    <%- include ('header.ejs') %>
+    <%- include ('menubar.ejs') %>
+  
+    <h3>Shopping Cart</h3>
+    <div class="cart-head">
+        <p>ITEM</p>
+        <div>
+            <p id="qty-text">QUANTITY</p>
+            <p id="price-text">PRICE</p>
+        </div>
+    </div>
+
+    <!-- CART ITEMS HERE -->
+
+    <div class="cart-item">
+        <i class="fas fa-times-circle"></i>
+        <div class="item-image">
+            <img src="../assets/Diwura/DSC_0255.jpg" alt="">
+        </div>
+        <p id="title">RAW: Black Excellence</p>
+        <div class="price-qty">
+            <p id="quantity">-</p>
+            <p id="price">$20.00</p>
+        </div>
+    </div>
+    <div class="cart-item">
+        <i class="fas fa-times-circle"></i>
+        <div class="item-image">
+            <img src="../assets/Landscape Painting_Ocean_Day.jpg" alt="">
+        </div>
+        <p id="title">DoomsDay: Day of Human</p>
+        <div class="price-qty">
+            <p id="quantity">-</p>
+            <p id="price">$10.00</p>
+        </div>
+    </div>
+    <div class="cart-item">
+        <i class="fas fa-times-circle"></i>
+        <div class="item-image">
+            <img src="../assets/Inioluwa/Finished/DSC_1767.jpg" alt="">
+        </div>
+        <p id="title">GREY: Looking Around</p>
+        <div class="price-qty">
+            <p id="quantity">-</p>
+            <p id="price">$90.00</p>
+        </div>
+    </div>
+    <div class="cart-item">
+        <i class="fas fa-times-circle"></i>
+        <div class="item-image">
+            <img src="../assets/Landscape Painting_Chaotic Night.jpg" alt="">
+        </div>
+        <p id="title">Nel: Selling market</p>
+        <div class="price-qty">
+            <p id="quantity">-</p>
+            <p id="price">$50.00</p>
+        </div>
+    </div>
+    <div id="purchase-btn-div">
+        <form action="paymentpage.html">    
+            <button name="pay-btn" id="purchase-btn">PROCEED TO PAYMENT</button>
+        </form>
+    </div>
+    <footer class="car footer">
+        <div class="foot-1">
+            <p>Joshua Ayomide Folowosele</p>
+            <p>photographer | Creative Artist | Editor</p>
+        </div>
+        <div class="divider"></div>
+        <div class="foot-2">
+            <p>@Official_Jafstar</p>
+            <p>jfolowosele@gmail.com</p>
+        </div>
+    </footer>
+</body>
+<script async src="../scripts/main.js"></script>
+</html>
